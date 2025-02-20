@@ -2,7 +2,6 @@ import EmptyList from "@/components/global/EmptyList";
 import {deleteProductAction, fetchAdminProducts} from "@/utils/actions";
 import Link from "next/link";
 import {IconButton} from "@/components/form/Buttons";
-
 import {formatCurrency} from "@/utils/format";
 import {
 	Table,
@@ -61,7 +60,7 @@ async function AdminProductsPage() {
 		</section>
 	);
 }
-export function DeleteProduct({productId}: {productId: string}) {
+function DeleteProduct({productId}: {productId: string}) {
 	const deleteProduct = deleteProductAction.bind(null, {productId});
 	return (
 		<FormContainer action={deleteProduct}>
