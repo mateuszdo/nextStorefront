@@ -2826,6 +2826,7 @@ function DeleteProduct({ productId }: { productId: string }) {
   return (
     <FormContainer action={deleteProduct}>
       <IconButton actionType='delete' />
+      
     </FormContainer>
   );
 }
