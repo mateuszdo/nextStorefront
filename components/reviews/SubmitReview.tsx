@@ -35,7 +35,7 @@ function SubmitReview({productId}: {productId: string}) {
 							name="authorImageUrl"
 							value={user?.imageUrl || ""}
 						/>
-						<RatingInput name="Rating" />
+						<RatingInput name="rating" />
 						<TextAreaInput
 							name="comment"
 							labelText="Feedback"
