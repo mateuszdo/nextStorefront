@@ -1,10 +1,11 @@
 import {FiShoppingCart} from "react-icons/fi";
 import {Button} from "../ui/button";
 import Link from "next/link";
+import { fetchCartItems } from "@/utils/actions";
 
-function CartButton() {
+async function CartButton() {
    //temp
-   const numItemsInCart = 9
+   const numItemsInCart = await fetchCartItems();
 
 	return (
 		<Button asChild variant="outline" size='icon' className="flex justify-center items-center relative">

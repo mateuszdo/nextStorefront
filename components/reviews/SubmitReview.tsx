@@ -41,7 +41,9 @@ function SubmitReview({productId}: {productId: string}) {
 							labelText="Feedback"
 							defaultValue="Outstanding product!!!"
 						/>
-						<SubmitButton className="mt-4" />
+						<SubmitButton
+							className="mt-4"
+						/>
 					</FormContainer>
 				</Card>
 			)}
